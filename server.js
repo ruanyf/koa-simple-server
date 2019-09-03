@@ -13,6 +13,7 @@ const app = new koa();
 
 const log = async function (ctx, next) {
   var body = '\n\n';
+  body += '## Header';
   body += '\n\n';
   body += JSON.stringify(ctx.request, null, 2);
 

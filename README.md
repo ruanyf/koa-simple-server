@@ -5,4 +5,39 @@ $ npm install
 $ npm start
 ```
 
-Visiting http://127.0.0.1:3000 .
+Open another terminal window to send a HTTP request.
+
+```bash
+$ curl -d 'hello=world' -X POST http://127.0.0.1:3000
+```
+
+Server output.
+
+```bash
+> node server.js
+
+listening Port 3000...
+
+  <-- POST /
+
+
+## Header
+
+{
+  "method": "POST",
+  "url": "/",
+  "header": {
+    "host": "127.0.0.1:3000",
+    "user-agent": "curl/7.65.3",
+    "accept": "*/*",
+    "content-length": "11",
+    "content-type": "application/x-www-form-urlencoded"
+  }
+}
+
+## Body
+
+{"hello":"world"}
+  --> POST / 200 18ms 0b
+```
+
