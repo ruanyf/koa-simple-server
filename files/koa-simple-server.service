@@ -1,0 +1,14 @@
+[Unit]
+Description=koa simple server
+After=network.target
+
+[Service]
+ExecStart=/home/ruanyf/project/koa-simple-server/index.js
+Restart=always
+User=ruanyf
+Group=ruanyf
+Environment=PATH=/usr/bin:/usr/local/bin
+Environment=NODE_ENV=production
+
+[Install]
+WantedBy=multi-user.target

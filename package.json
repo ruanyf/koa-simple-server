@@ -1,0 +1,20 @@
+{
+  "name": "koa-simple-server",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "koa": "latest",
+    "koa-body": "latest",
+    "koa-logger": "latest",
+    "koa-route": "^3.2.0",
+    "koa-static": "^5.0.0"
+  }
+}
