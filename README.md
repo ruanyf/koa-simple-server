@@ -1,4 +1,4 @@
-A simple koa server demo showing all HTTP request Headers. It could also be used as a basis for modifications to suit your needs.
+A simple koa server demo of logging HTTP request Headers and body. It could also be used as a basis for modifications to suit your needs.
 
 ```bash
 $ npm install
